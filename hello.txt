@@ -1,0 +1,203 @@
+!pip install openAI
+
+from openai import OpenAI
+
+client = OpenAI(api_key="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")
+
+prompt = """
+Translate the following sentence into Hindi:
+I am learning Artificial Intelligence and Machine Learning.
+"""
+
+response = client.responses.create(
+    model="gpt-5",
+    input=prompt
+)
+
+print(response.output_text)
+
+from openai import OpenAI
+
+client = OpenAI(api_key="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")
+
+prompt = """
+Convert the text into postive sentences:
+Example:
+Input:The movie was boring
+Output:The movie was insterting.
+
+Input:the food was bad.
+Output:
+"""
+
+response = client.responses.create(
+    model="gpt-5",
+    input=prompt
+)
+
+print(response.output_text)
+
+from openai import OpenAI
+
+client = OpenAI(api_key="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")
+
+prompt = """
+Classify the following senetence as postive and negtive.
+Example 1:
+Senetence:I love MVIT.
+Aswer:Positive
+
+Example 2:
+Sentence:I hate MVIT.
+Answer:Negative
+Sentence:I am learning Artificial Intelligence and Machine Learning.
+Answer:
+Sentence:I hate learning Artificial Intelligence and Machine Learning.
+Answer:
+"""
+
+response = client.responses.create(
+    model="gpt-5",
+    input=prompt
+)
+
+print(response.output_text)
+
+from openai import OpenAI
+
+client = OpenAI(api_key="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")
+
+prompt = """
+You are a experienced Java Trainer.
+Explain DSA in Java to beginer.
+use simple langauage and give one real-life example for the same.
+"""
+
+response = client.responses.create(
+    model="gpt-5",
+    input=prompt
+)
+
+print(response.output_text)
+
+from openai import OpenAI
+
+client = OpenAI(api_key="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")
+
+prompt = """
+Solve this problem.
+A Shop has 46 apple.
+It sells 12 appls and then it buys 20 more apples.
+Give me the solution setp by step and provide total number of appls left in shop.
+"""
+
+response = client.responses.create(
+    model="gpt-5",
+    input=prompt
+)
+
+print(response.output_text)
+
+from openai import OpenAI
+
+client = OpenAI(api_key="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")
+
+prompt = """
+Solve this problem.
+You are given two non-empty linked lists representing two non-negative integers. The digits are stored in reverse order, and each of their nodes contains a single digit. Add the two numbers and return the sum as a linked list.
+
+You may assume the two numbers do not contain any leading zero, except the number 0 itself.
+Give me the solution setp by step and provide program in python.
+"""
+
+response = client.responses.create(
+    model="gpt-5",
+    input=prompt
+)
+
+print(response.output_text)
+
+from openai import OpenAI
+
+client = OpenAI(api_key="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")
+
+prompt = """
+Explain python loops.
+Follow these Senetence.
+1.Exaplin for loop.
+2.Explain while loop.
+3.Give one code example for for loop.
+4.Give one code example for while loop.
+5.Use simple langauage and give one real-life example for the same.
+6. Keep the answser shot
+"""
+
+response = client.responses.create(
+    model="gpt-5",
+    input=prompt
+)
+
+print(response.output_text)
+
+from openai import OpenAI
+
+client = OpenAI(api_key="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")
+
+prompt = """
+Explain Artifical Intelligence.
+Follow thses constrains:
+-use exactly 5 points.
+-each point must conatin 1 sentence.
+-use simple lanaguage.
+-Do no use technical terms.
+"""
+
+response = client.responses.create(
+    model="gpt-5",
+    input=prompt
+)
+
+print(response.output_text)
+
+from openai import OpenAI
+
+client = OpenAI(api_key="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")
+
+prompt = """
+Act as a friendly carrer mentor.
+Expain how a begineer can start learing python
+for a siftware developer carrer.
+
+Give parical adive in friendly tone.
+"""
+
+response = client.responses.create(
+    model="gpt-5",
+    input=prompt
+)
+
+print(response.output_text)
+
+from openai import OpenAI
+
+client = OpenAI(api_key="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")
+topic="Machine learing"
+prompt = """
+Explain the following topics using the give template:
+Topic:{topic}
+Defination:
+Advantanges:
+Disadvanatges:
+EXample:
+Conclusion:
+"""
+
+response = client.responses.create(
+    model="gpt-5",
+    input=prompt
+)
+
+print(response.output_text)
+
+
+
